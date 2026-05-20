@@ -21,5 +21,19 @@ spring:
     show-sql: true
 
   config:
-    import: "optional:configserver:https://localhost:8071"
+    import: "optional:configserver:http://localhost:8071/"
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+  cloud:
+    bus:
+      id: loans:${server.port}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 

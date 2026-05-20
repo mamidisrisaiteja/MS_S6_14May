@@ -41,6 +41,8 @@
                 <artifactId>spring-boot-starter-web</artifactId>
             </dependency>
 
+
+
             <!-- JPA -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -94,6 +96,11 @@
                 <scope>test</scope>
             </dependency>
 
+        <!-- Rabbit MQ -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
 
 
 

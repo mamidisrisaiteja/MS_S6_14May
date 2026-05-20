@@ -36,7 +36,11 @@
     </properties>
     <dependencies>
 
-
+        <!-- Rabbit MQ -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
 
         <!-- Web -->
         <dependency>
